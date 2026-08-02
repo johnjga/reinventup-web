@@ -70,7 +70,11 @@
   @media(min-width:980px){ .hero .inner{grid-template-columns:1.02fr .98fr; gap:56px} }
   .hero .copy{max-width:640px}
   .hero .visual{position:relative}
-  .hero .visual svg{width:100%; height:auto; display:block; filter:drop-shadow(0 30px 50px rgba(11,21,51,.18))}
+  .hero-photo{border-radius:24px; overflow:hidden; box-shadow:0 34px 62px -30px rgba(11,21,51,.40); aspect-ratio:1/1}
+  .hero-photo img{width:100%; height:100%; object-fit:cover; object-position:center 28%; display:block}
+  .hero-mockup{position:absolute; left:-22px; bottom:-30px; width:46%}
+  .hero-mockup svg{width:100%; height:auto; display:block; filter:drop-shadow(0 22px 40px rgba(11,21,51,.30))}
+  @media(max-width:520px){ .hero-mockup{width:52%; left:-8px; bottom:-16px} }
   .hero h1{font-size:clamp(38px,6.4vw,68px); font-weight:800}
   .hero h1 .accent{color:var(--blue)}
   .hero p.lead{margin-top:22px; font-size:clamp(17px,2.2vw,21px); color:var(--muted); max-width:60ch}
@@ -98,6 +102,8 @@
   .engines{display:grid; gap:24px}
   @media(min-width:820px){ .engines{grid-template-columns:1fr 1fr} }
   .engine{background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:32px; box-shadow:0 20px 44px -30px rgba(11,21,51,.28)}
+  .engine .cover{border-radius:16px; overflow:hidden; margin:-6px 0 22px; aspect-ratio:16/7.5}
+  .engine .cover img{width:100%; height:100%; object-fit:cover; display:block}
   .engine .ico{width:52px; height:52px; border-radius:15px; display:flex; align-items:center; justify-content:center; font-size:26px}
   .engine.brand .ico{background:rgba(7,42,200,.1)}
   .engine.job .ico{background:rgba(255,90,60,.12)}
@@ -206,7 +212,9 @@
           </div>
           <p class="tag">El impulso te lo das tú.</p>
         </div>
-        <div class="visual" aria-hidden="true">
+        <div class="visual">
+          <div class="hero-photo"><img src="./img/protagonista.jpg" alt="Profesional en reinvención, listo para su siguiente paso" loading="eager"></div>
+          <div class="hero-mockup" aria-hidden="true">
           <svg viewBox="0 0 480 462" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vista del producto ReinventUp">
             <!-- Ventana / tarjeta principal -->
             <rect x="30" y="20" width="420" height="422" rx="26" fill="#FFFFFF" stroke="#DFE3F5" stroke-width="1.5"/>
@@ -235,6 +243,7 @@
             <circle cx="63" cy="387" r="7" fill="#E8A400"/><rect x="80" y="381" width="210" height="12" rx="6" fill="#EEF2FB"/>
             <circle cx="63" cy="413" r="7" fill="#E5484D"/><rect x="80" y="407" width="176" height="12" rx="6" fill="#EEF2FB"/>
           </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -265,6 +274,7 @@
         </div>
         <div class="engines">
           <div class="engine brand">
+            <div class="cover"><img src="./img/marca.jpg" alt="Profesional creando contenido en su laptop" loading="lazy"></div>
             <span class="ico">📣</span>
             <h3>Marca personal</h3>
             <p>Construyes autoridad y te vuelves referente de tu tema, en tu propia voz.</p>
@@ -276,6 +286,7 @@
             </ul>
           </div>
           <div class="engine job">
+            <div class="cover"><img src="./img/empleo.jpg" alt="Apretón de manos al cerrar una entrevista de trabajo" loading="lazy"></div>
             <span class="ico">💼</span>
             <h3>Búsqueda de empleo</h3>
             <p>Un método de outplacement propio: dejas de mandar CV a ciegas y llegas al que decide.</p>
