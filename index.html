@@ -24,10 +24,13 @@
   .glow.a{width:340px;height:340px;top:-90px;right:-70px;transform:rotate(20deg)}
   .glow.b{width:260px;height:260px;bottom:-80px;left:-60px;transform:rotate(-14deg)}
   .wrap{position:relative; z-index:1; max-width:640px; width:100%; display:flex; flex-direction:column; align-items:center}
-  .lock{display:inline-flex; align-items:center; gap:.1em; line-height:1; white-space:nowrap}
-  .lock .word{font-family:"Jost",system-ui,sans-serif; font-weight:800; letter-spacing:-.02em; color:#fff;
+  /* El tamaño va en el CONTENEDOR (igual que el logo de la plataforma), así el UP
+     escala con la palabra. El UP a 1.18em replica exactamente la proporción del
+     logo de la app (Logo en App.tsx: isotipo height 1.18em, ml 0.14em). */
+  .lock{display:inline-flex; align-items:center; gap:.14em; line-height:1; white-space:nowrap;
     font-size:clamp(44px,9.5vw,80px)}
-  .lock img{height:1.5em; width:auto; display:block; margin-top:.02em}
+  .lock .word{font-family:"Jost",system-ui,sans-serif; font-weight:800; letter-spacing:-.02em; color:#fff}
+  .lock img{height:1.18em; width:auto; display:block}
   .badge{display:inline-block; margin-top:26px; background:var(--coral); color:#fff; font-weight:800;
     font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:8px 16px; border-radius:999px}
   h1{font-family:"Jost",system-ui,sans-serif; font-weight:800; letter-spacing:-.01em;
