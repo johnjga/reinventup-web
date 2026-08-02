@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReinventUp — Muy pronto</title>
+<meta name="description" content="ReinventUp — reinvéntate: marca personal y búsqueda de empleo en LinkedIn, paso a paso.">
+<meta name="theme-color" content="#072AC8">
+<link rel="icon" type="image/png" href="./isotipo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --blue:#072AC8; --coral:#FF5A3C; --navy:#0B1533; }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--blue); color:#fff;
+    font-family:"Plus Jakarta Sans",system-ui,Segoe UI,Arial,sans-serif;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    padding:32px; overflow:hidden; position:relative;
+  }
+  .glow{position:absolute; border-radius:44px; background:rgba(255,90,60,.16); filter:blur(2px)}
+  .glow.a{width:340px;height:340px;top:-90px;right:-70px;transform:rotate(20deg)}
+  .glow.b{width:260px;height:260px;bottom:-80px;left:-60px;transform:rotate(-14deg)}
+  .wrap{position:relative; z-index:1; max-width:640px; width:100%}
+  .lock{display:inline-flex; align-items:center; gap:.16em; line-height:1; white-space:nowrap}
+  .lock .word{font-family:"Jost",system-ui,sans-serif; font-weight:800; letter-spacing:-.02em; color:#fff;
+    font-size:clamp(40px,9vw,74px)}
+  .lock img{height:1.16em; width:auto; display:block}
+  .badge{display:inline-block; margin-top:26px; background:var(--coral); color:#fff; font-weight:800;
+    font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:8px 16px; border-radius:999px}
+  h1{font-family:"Jost",system-ui,sans-serif; font-weight:800; letter-spacing:-.01em;
+    font-size:clamp(26px,5vw,40px); margin:22px 0 10px; line-height:1.1}
+  p.sub{color:#CDD7FF; font-size:clamp(15px,2.4vw,18px); margin:0 auto; max-width:34ch; line-height:1.6}
+  .foot{margin-top:40px; color:#9DB0FF; font-size:14px}
+  .foot a{color:#fff; font-weight:700; text-decoration:none; border-bottom:2px solid var(--coral); padding-bottom:1px}
+  .dot{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--coral); margin:0 8px; vertical-align:middle}
+</style>
+</head>
+<body>
+  <span class="glow a" aria-hidden="true"></span>
+  <span class="glow b" aria-hidden="true"></span>
+  <main class="wrap">
+    <div class="lock" aria-label="ReinventUp">
+      <span class="word">Reinvent</span>
+      <img src="./isotipo.png" alt="UP">
+    </div>
+    <div class="badge">Muy pronto</div>
+    <h1>Reinvéntate en LinkedIn.</h1>
+    <p class="sub">Marca personal y búsqueda de empleo, paso a paso. El impulso te lo das tú.</p>
+    <div class="foot">
+      ¿Quieres avisos de lanzamiento? Escríbenos a <a href="mailto:hola@reinventup.com">hola@reinventup.com</a>
+      <div style="margin-top:14px; font-size:12px; color:#7E93EE">reinventup.com <span class="dot"></span> © 2026 ReinventUp</div>
+    </div>
+  </main>
+</body>
+</html>
