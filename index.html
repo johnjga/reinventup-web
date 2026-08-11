@@ -70,9 +70,16 @@
   @media(min-width:980px){ .hero .inner{grid-template-columns:1.02fr .98fr; gap:56px} }
   .hero .copy{max-width:640px}
   .hero .visual{position:relative}
-  .hero-photo{border-radius:24px; overflow:hidden; box-shadow:0 34px 62px -30px rgba(11,21,51,.40); aspect-ratio:1/1}
-  .hero-photo img{width:100%; height:100%; object-fit:cover; object-position:center 28%; display:block}
-  .hero-mockup{position:absolute; left:-22px; bottom:-30px; width:46%}
+  /* Foto PRINCIPAL: la cara de Dani (grande) */
+  .hero-photo{border-radius:20px; overflow:hidden; box-shadow:0 34px 62px -30px rgba(11,21,51,.42); aspect-ratio:5/4}
+  .hero-photo img{width:100%; height:100%; object-fit:cover; object-position:32% center; display:block}
+  /* Perfil de LinkedIn: ~un cuarto del tamaño, esquina inferior izquierda, sobresale 10% izq y 10% abajo */
+  /* Sobre la foto (esquina inferior izq), subida hacia la cara sin llegar a la barbilla,
+     con vuelo corto a la izquierda para NO montarse sobre el texto y dejar hueco limpio. */
+  .hero-linkedin{position:absolute; top:74%; left:-6%; width:56%; border-radius:12px; overflow:hidden; z-index:2; border:4px solid #fff; box-shadow:0 22px 46px -18px rgba(11,21,51,.5)}
+  .hero-linkedin img{width:100%; height:auto; display:block}
+  @media(max-width:520px){ .hero-linkedin{left:-5%; top:72%; width:62%} }
+  .hero-mockup{display:none} /* oculto: la foto ya trae el perfil real de LinkedIn */
   .hero-mockup svg{width:100%; height:auto; display:block; filter:drop-shadow(0 22px 40px rgba(11,21,51,.30))}
   @media(max-width:520px){ .hero-mockup{width:52%; left:-8px; bottom:-16px} }
   .hero h1{font-size:clamp(38px,6.4vw,68px); font-weight:800}
@@ -213,7 +220,8 @@
           <p class="tag">El impulso te lo das tú.</p>
         </div>
         <div class="visual">
-          <div class="hero-photo"><img src="./img/protagonista.jpg" alt="Profesional en reinvención, listo para su siguiente paso" loading="eager"></div>
+          <div class="hero-photo"><img src="./img/dani-face.jpg" alt="Daniella Rigual, profesional en reinvención" loading="eager"></div>
+          <div class="hero-linkedin"><img src="./img/dani-linkedin.jpg" alt="Perfil de LinkedIn de Daniella Rigual, optimizado con ReinventUp" loading="eager"></div>
           <div class="hero-mockup" aria-hidden="true">
           <svg viewBox="0 0 480 462" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vista del producto ReinventUp">
             <!-- Ventana / tarjeta principal -->
