@@ -1,0 +1,20 @@
+# ReinventUp
+
+> App de suscripción para profesionales hispanohablantes que quieren construir su marca personal y ejecutar su búsqueda de empleo en LinkedIn, paso a paso y en su propia voz. El usuario paga y usa; la inteligencia artificial trabaja por detrás, sin configuración técnica.
+
+ReinventUp combina una base (la identidad del profesional) con dos motores:
+
+- **Marca personal:** perfil, banner y foto de perfil, banco de ideas, redactor de posts, carruseles e imágenes.
+- **Búsqueda de empleo:** CV por resultados (ATS-safe, Word y PDF), radar de empresas con veredicto honesto, plan de ataque al decisor y preparación de entrevista.
+
+Nunca automatiza LinkedIn (nada de publicar, enviar mensajes ni conexiones): la app es el estratega, el usuario ejecuta.
+
+- Para quién: profesionales hispanohablantes en reinvención profesional.
+- Precio: 19.99 USD al mes (suscripción; se cancela cuando quieras).
+- Idioma: español.
+- Fundador: John Guillén.
+
+## Páginas
+- [Inicio](https://reinventup.com/): qué es, cómo funciona, la oferta y las preguntas frecuentes.
+- [Aviso de privacidad](https://reinventup.com/privacidad.html): cómo se tratan los datos personales.
+- [Términos y condiciones](https://reinventup.com/terminos.html): condiciones de uso.
